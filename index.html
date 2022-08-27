@@ -14,31 +14,31 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="GET" action="results.html">
             <div>
-                <label for="firstname">Your First Name<span class="required-field"></span></label>
+                <label for="firstname">Your First Name<span class="required-field">*</span></label>
                 <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35" required>
 
-                <label for="lastname">Your Last Name</label>
+                <label for="lastname">Your Last Name<span class="required-field">*</span></label>
                 <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35" required>
 
-                <label for="age">Your Age</label>
+                <label for="age">Your Age<span class="required-field">*</span></label>
                 <input type="number" id="age" name="age" id="age" min="21" max="120" minlength="2" maxlength="3" required>
                 <h5>Must be 25 years or older to enter the contest</h5>
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
                 <div>
-                    <label for="email">Your Email</label>
+                    <label for="email">Your Email<span class="required-field">*</span></label>
                     <input type="email" id="email" name="email" required>
                     
                 </div>
                 <div>
-                    <label for="address">Your Street Address</label>
+                    <label for="address">Your Street Address<span class="required-field">*</span></label>
                     <input type="text" id="address" name="address" required>
                 </div>
                 <div>
-                    <label for="city">Your City</label>
+                    <label for="city">Your City<span class="required-field">*</span></label>
                     <input type="text" id="city" name="city" required>
-                    <label for="state">Your State</label>
+                    <label for="state">Your State<span class="required-field">*</span></label>
                     <input list="state-list" id="state" name="state" required>
                     <datalist id="state-list">
                         <option value="AK">Alaska</option>
@@ -91,14 +91,14 @@
                         <option value="WV">West Virginia</option>
                         <option value="WY">Wyoming</option>
                     </datalist>
-                    <label for="zip">Your Zipcode</label>
+                    <label for="zip">Your Zipcode<span class="required-field">*</span></label>
                     <input type="text" id="zip" name="zip" pattern="[0-9] {5}" required>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>Your Preferences</legend>
-                <h3>Choose your location</h3>
+                <h3>Choose your location<span class="required-field">*</span></h3>
                 <div>
                     <input type="radio" id="aruba" name="location" value="Aruba" checked> 
                     <label for="aruba">Aruba</label>
